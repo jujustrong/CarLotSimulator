@@ -16,9 +16,9 @@ namespace CarLotSimulator
 
             // CarLot MainLot = new CarLot();
             //Now that the Car class is created we can instantiate 3 new cars
-            Car car1 = new Car("2018", "Ferrari", "488 GTB", IsDriveable:true);
-            Car car2 = new Car("2018", "Porsche", "718 Cayman", IsDriveable:true);
-            Car car3 = new Car("2024", "Mercedes-Benz", "AMG GT 63", IsDriveable:true);
+            Car car1 = new Car("2018", "Ferrari", "488 GTB", isDriveable:true);
+            Car car2 = new Car("2018", "Porsche", "718 Cayman", isDriveable:true);
+            Car car3 = new Car("2024", "Mercedes-Benz", "AMG GT 63", isDriveable:true);
             //Set the properties for each of the cars
             //Call each of the methods for each car
             car1.MakeEngineNoise("Rumble");
@@ -31,6 +31,7 @@ namespace CarLotSimulator
             //*************BONUS*************//
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
+            
 
             //*************BONUS X 2*************//
 
