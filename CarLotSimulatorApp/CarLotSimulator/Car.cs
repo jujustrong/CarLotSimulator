@@ -5,12 +5,16 @@ namespace CarLotSimulator;
 
 public class Car
 {
-    public Car(string year, string make, string model, bool isDriveable)
+    public int Year { get; set; }
+    public string Make { get; set; }
+    public string Model { get; set; }
+    public bool IsDriveable { get; set; }
+    public Car(int year, string make, string model, bool isDriveable)
     {
-        var Year = year;
-        var Make = make;
-        var Model = model;
-        var Driveable = isDriveable;
+        Year = year;
+        Make = make;
+        Model = model;
+        IsDriveable = isDriveable;
     }
     public void MakeEngineNoise(string engineNoise)
     {
