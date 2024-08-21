@@ -1,22 +1,55 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CarLotSimulator
 {
+    class Car
+    {
+        public Car(string Year, string Make, string Model, bool IsDriveable)
+        {
+            var year = Year;
+            var make = Make;
+            var model = Model;
+            var driveable = IsDriveable;
+        }
+        public void MakeEngineNoise(string engineNoise)
+        {
+            Console.WriteLine($"{engineNoise}");
+        }
+        
+        public void MakeHonkNoise(string honk)
+        {
+            Console.WriteLine($"{honk}");
+        }
+    }
+
+    class CarLot
+    {
+
+    }
     class Program
     {
         static void Main(string[] args)
         {
             //TODO
-
-            //Create a seperate class file called Car
+            //Create a separate class file called Car
             //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
             //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
             //The methods should take one string parameter: the respective noise property
 
-
-            //Now that the Car class is created we can instanciate 3 new cars
+            // CarLot MainLot = new CarLot();
+            //Now that the Car class is created we can instantiate 3 new cars
+            Car car1 = new Car("2018", "Ferrari", "488 GTB", IsDriveable:true);
+            Car car2 = new Car("2018", "Porsche", "718 Cayman", IsDriveable:true);
+            Car car3 = new Car("2024", "Mercedes-Benz", "AMG GT 63", IsDriveable:true);
             //Set the properties for each of the cars
             //Call each of the methods for each car
+            car1.MakeEngineNoise("Rumble");
+            car1.MakeHonkNoise("Honk");
+            car2.MakeEngineNoise("Revvv");
+            car2.MakeHonkNoise("Beep");
+            car3.MakeEngineNoise("Hummm");
+            car3.MakeHonkNoise("Pew Pew");
 
             //*************BONUS*************//
 
@@ -26,7 +59,7 @@ namespace CarLotSimulator
 
             //Create a CarLot class
             //It should have at least one property: a List of cars
-            //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
+            //Instantiate the  Car lot at the beginning of the program and as you create a car add the car to the list.
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
         }
     }
