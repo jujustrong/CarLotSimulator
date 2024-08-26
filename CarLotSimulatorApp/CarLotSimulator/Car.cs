@@ -15,6 +15,7 @@ public class Car
         Make = make;
         Model = model;
         IsDriveable = isDriveable;
+        CarLot.NumberOfCars++;
     }
     public void MakeEngineNoise(string engineNoise)
     {

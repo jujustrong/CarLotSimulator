@@ -20,12 +20,15 @@ namespace CarLotSimulator
             
             var car1 = new Car(2018, "Ferrari", "488 GTB", isDriveable:true);
             mainLot.ParkingLot.Add(car1);
+            Console.WriteLine($"Number of cars in the Mainlot: {CarLot.NumberOfCars}");
             
             var car2 = new Car(2018, "Porsche", "718 Cayman", isDriveable:true);
-            mainLot.ParkingLot.Add(car1);
+            mainLot.ParkingLot.Add(car2);
+            Console.WriteLine($"Number of cars in the Mainlot: {CarLot.NumberOfCars}");
             
             var car3 = new Car(2024, "Mercedes-Benz", "AMG GT 63", isDriveable:true);
-            mainLot.ParkingLot.Add(car1);
+            mainLot.ParkingLot.Add(car3);
+            Console.WriteLine($"Number of cars in the Mainlot: {CarLot.NumberOfCars}");
             
             
             //Set the properties for each of the cars
