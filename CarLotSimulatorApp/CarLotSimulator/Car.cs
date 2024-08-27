@@ -9,6 +9,11 @@ public class Car
     public string Make { get; set; }
     public string Model { get; set; }
     public bool IsDriveable { get; set; }
+
+    public Car()
+    {
+        CarLot.NumberOfCars++;
+    }
     public Car(int year, string make, string model, bool isDriveable)
     {
         Year = year;
